@@ -1,0 +1,186 @@
+/* 
+    Document   : t-table
+    Created on : 06.08.2012, 12:00:23
+    Author     : nitschjo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    font-family: Arial;
+}
+
+div.dataTables_scroll {
+    float: left;
+}
+
+div.dataTables_wrapper {
+	background-color: #EDEDED;
+        font-family: Arial;
+        font-size: medium;
+}
+
+div.dataTables_length {
+	float: left;
+}
+
+div.dataTables_filter {
+	float: right;
+}
+
+div.dataTables_info {
+	padding: 9px 6px 6px 6px;
+	float: left;
+}
+
+div.dataTables_paginate {
+	float: right;
+}
+
+div.dataTables_length{
+    padding: 6px;
+    float: right;
+}
+
+div.dataTables_length,
+div.dataTables_filter,
+div.dataTables_paginate {
+	padding: 6px;
+        float: left;
+}
+
+/* Self clearing - http://www.webtoolkit.info/css-clearfix.html */
+.dataTables_wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+html[xmlns] .dataTables_wrapper {
+	display: block;
+}
+ 
+* html .dataTables_wrapper {
+	height: 1%;
+}
+
+
+/*
+ * Table styles
+ */
+table.ttable {
+	width: 100%;
+	clear: both;
+        font-size: small;
+}
+
+table.ttable input {
+	color: #000000;
+        width: 100%;
+}
+
+table.ttable .search_init {
+    color: #D0D0D0;
+}
+
+table.ttable td,
+table.ttable th {
+	padding: 2px;
+	border: 1px solid #fff;
+}
+
+/* Header cells */
+table.ttable thead th {
+	text-align: center;
+	background: #D0D0D0;   
+        color: #4B4B4B;
+}
+
+/* Body cells */
+table.ttable tbody th {
+	text-align: left;
+	background: #D0D0D0;
+}
+	
+table.ttable tbody td {
+	text-align: center;
+        background: #d1dfec;
+}
+		
+table.ttable tbody tr.odd td { 
+    background: #9fbdd5;
+}
+
+/* Footer cells */	
+table.ttable tfoot th {
+	background: #b0cc7f;
+	text-align: left;
+}
+	
+table.ttable tfoot td {
+	background: #d7e1c5;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/*
+ * Pagination
+ */
+a.paginate_button,
+a.paginate_active {
+	display: inline-block;
+        color: #FFFFFF;
+        background-color: #427bab;
+	padding: 2px 6px;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+a.paginate_active {
+    background-color: #9fbdd5;
+	border: 1px solid black;
+}
+
+a.paginate_button_disabled {
+	color: #3d6672;
+}
+.paging_full_numbers a:active {
+	outline: none
+}
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+
+div.dataTables_paginate span>a {
+	width: 15px;
+	text-align: center;
+}
+
+
+/*
+ * Sorting
+ */
+table.ttable thead th.sorting_asc {
+	background: #D0D0D0 url('../jquery/DataTables/media/images/sort_asc.png') no-repeat right center;
+}
+
+table.ttable thead th.sorting_desc {
+	background: #D0D0D0 url('../jquery/DataTables/media/images/sort_desc.png') no-repeat right center;
+}
+
+table.ttable thead th.sorting {
+	background: #D0D0D0 url('../jquery/DataTables/media/images/sort_both.png') no-repeat right center;
+}
+
+#generator input, #generator select, #order_generator input, #order_generator select {
+    width: 500px;
+}
+
+.notdefault{
+    /*background-color: lightblue;*/
+    
+}
